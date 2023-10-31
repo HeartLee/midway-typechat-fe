@@ -9,4 +9,8 @@ const addStar = async (text: string) => {
   const a = await axios.post('/api/add_star', { text })
   return a.data
 }
-export { getStateList, addStar }
+const buyCoffee = async (coffee: string) => {
+  const a = await axios.post('/api/buy_coffee', { coffee })
+  return a.data
+}
+export { getStateList, addStar, buyCoffee }

@@ -4,12 +4,13 @@ import {
   Route,
 } from 'react-router-dom'
 import { DefaultLayout } from '../layout/default-layout'
-import { StarList } from '../page/typechat-demo'
+import { StarList, BuyCoffee } from '../page'
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<DefaultLayout />}>
-      <Route path="/typechat" element={<StarList />} />
+      <Route path="/star" element={<StarList />} />
+      <Route path="/coffee" element={<BuyCoffee />} />
     </Route>,
   ),
 )
